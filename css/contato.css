@@ -2,6 +2,10 @@ header{
     background-color: #59EB5B;
 }
 
+header nav img{
+    height: 60px;
+}
+
 nav{
     display: inline-block;
     justify-content: space-between;
@@ -24,18 +28,27 @@ footer a{
     height: 30px;
 }
 
-form{
+main{
     grid-area: main;
 }
 
 
 .grid{
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: repeat(3, 4fr);
-    
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
     grid-template-areas:
-    ". . ."
-    "main main ."
-    ". . ." 
+    "main main ." 
     ". footer .";
+}
+
+@media screen and (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        
+        "main main . ."
+        ". footer footer .";
+       
+    }
 }
