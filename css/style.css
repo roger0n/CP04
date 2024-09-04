@@ -12,11 +12,6 @@ nav{
     align-items: center;
 }
 
-/* Estilo personalizado para o carrossel */
-.carousel-item img {
-    object-fit: cover;
-    width: 100%;
-}
 
 .carousel-caption h5 {
     color: #000000; /* Cor do título */
